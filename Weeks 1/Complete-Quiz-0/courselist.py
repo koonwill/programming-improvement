@@ -7,6 +7,7 @@ class CourseList:
             self.cl[course.course_id] = course
             return True
         return False
+
     def drop_course(self, course_id):
         if course_id in self.cl:
             self.cl.pop(course_id)
@@ -18,3 +19,6 @@ class CourseList:
         for course in self.cl.values():
             all_credits += course.credits
         return all_credits
+
+    def __len__(self):
+        return len(self.cl)
