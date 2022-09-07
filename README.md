@@ -9,6 +9,7 @@ This will separate into 4 part which take around 4 weeks until the midterm test.
 * Practice Object-Oriented Programming
 * Review Quiz-0
 * Complete Quiz-0
+* Practice some dictionary exercises
 
 ### Weeks 2
 * To be added.

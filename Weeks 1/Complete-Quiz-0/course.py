@@ -10,21 +10,21 @@ class Course:
         # if type(credits) != int:
         if not isinstance(credits, int):
             raise TypeError("Credits must be integer")
-        self._course_id = course_id
-        self._description = description
-        self._credits = credits
+        self.__course_id = course_id
+        self.__description = description
+        self.__credits = credits
 
     @property
     def course_id(self):
-        return self._course_id
+        return self.__course_id
 
     @property
     def description(self):
-        return self._description
+        return self.__description
 
     @property
     def credits(self):
-        return self._credits
+        return self.__credits
 
     def __str__(self) -> str:
         return f"{self.course_id} {self.description} ({self.credits})"
